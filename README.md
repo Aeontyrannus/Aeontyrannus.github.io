@@ -1,8 +1,14 @@
 # Ayon Wickramasinghe Portfolio
 
-Starter portfolio for GitHub Pages.
+GitHub Pages portfolio starter for Ayon Wickramasinghe.
 
-## Replace these placeholders
+## Uploading
+
+Upload the contents of this folder into the root of the `aeontyrannus.github.io` repository.
+
+## Replace placeholders
+
+Keep these filenames so the HTML continues to work:
 
 - `images/hero.jpg`
 - `images/field-01.jpg`
@@ -14,22 +20,10 @@ Starter portfolio for GitHub Pages.
 - `assets/resume.pdf`
 - `assets/cv.pdf`
 
-Keep the filenames the same and the site will use your replacements automatically.
-
-## Pages
-
-- Home: `index.html`
-- About: `about.html`
-- Field Experience: `fieldwork.html`
-- Paleontology: `paleontology.html`
-- Science Communication: `science-communication.html`
-- Resume & CV: `resume.html`
-- Contact: `contact.html`
-
 ## Before launch
 
-1. Replace the image and PDF placeholders.
-2. Replace the LinkedIn placeholder URL in the HTML files with your actual LinkedIn URL.
-3. Review all text and remove any field details you do not want public.
-4. Test all navigation links on desktop and mobile.
-5. Publish through GitHub Pages.
+- Replace the placeholder images/PDFs.
+- Replace the placeholder LinkedIn URL in the HTML with your actual LinkedIn URL.
+- Review all field-site wording and remove any sensitive locality or unpublished specimen details before making the site public.
+- Test navigation and downloads on desktop and mobile.
+- Connect `ayonwick.com` after the GitHub Pages version is confirmed working.
