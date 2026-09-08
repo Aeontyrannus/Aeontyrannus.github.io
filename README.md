@@ -14,6 +14,7 @@ Keep these filenames so the HTML continues to work:
 - `images/field-01.jpg`
 - `images/field-02.jpg`
 - `images/field-03.jpg`
+- `images/field-04.jpg`
 - `images/jacket.jpg`
 - `images/specimen.jpg`
 - `images/media-01.jpg`
