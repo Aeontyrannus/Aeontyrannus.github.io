@@ -18,6 +18,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+
+  // Interactive hero name: a subtle cursor-following gradient highlight.
+  const heroName = document.querySelector('.hero-name');
+  const hero = document.querySelector('.hero');
+  const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  if (heroName && canHover) {
+    heroName.addEventListener('pointermove', (event) => {
+      const rect = heroName.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width) * 100;
+      heroName.style.setProperty('--mx', `${Math.max(0, Math.min(100, x))}%`);
+      heroName.classList.add('is-hovering');
+    });
+
+    heroName.addEventListener('pointerleave', () => {
+      heroName.classList.remove('is-hovering');
+      heroName.style.removeProperty('--mx');
+    });
+  }
+
+  // Very subtle hero-photo parallax on desktop.
+  if (hero && canHover) {
+    hero.addEventListener('pointermove', (event) => {
+      const rect = hero.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 10;
+      const y = ((event.clientY - rect.top) / rect.height - 0.5) * 8;
+      hero.style.setProperty('--hero-x', `${x.toFixed(2)}px`);
+      hero.style.setProperty('--hero-y', `${y.toFixed(2)}px`);
+    });
+
+    hero.addEventListener('pointerleave', () => {
+      hero.style.setProperty('--hero-x', '0px');
+      hero.style.setProperty('--hero-y', '0px');
+    });
+  }
+
   const revealItems = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && revealItems.length) {
     const observer = new IntersectionObserver((entries, obs) => {

@@ -27,3 +27,10 @@ Keep these filenames so the HTML continues to work:
 - Review all field-site wording and remove any sensitive locality or unpublished specimen details before making the site public.
 - Test navigation and downloads on desktop and mobile.
 - Connect `ayonwick.com` after the GitHub Pages version is confirmed working.
+
+
+## v3 design updates
+- Static blush gradient hero name with cursor-following highlight on desktop.
+- Subtle hero-image parallax on desktop.
+- Existing button shine, card lift, image zoom and scroll-reveal effects retained.
+- Reduced-motion support retained.
