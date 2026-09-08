@@ -116,7 +116,7 @@ h1,h2,h3{font-weight:900}
 .accent-line{display:block;width:64px;height:3px;background:linear-gradient(90deg,var(--pink),var(--gold));margin-bottom:20px;border-radius:999px}
 .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
 .gallery-grid .image-frame{min-height:310px}
-.gallery-grid .image-frame:first-child{grid-column:span 2;min-height:400px}
+.gallery-grid .image-frame:first-child{grid-column:auto;min-height:310px}
 .clean-list{padding-left:20px}.clean-list li{margin-bottom:15px}
 .interest h2{font-size:1.55rem;margin-bottom:12px}
 .callout{border-top:3px solid transparent;border-image:linear-gradient(90deg,var(--pink),var(--gold)) 1;padding-top:35px}
